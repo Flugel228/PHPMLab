@@ -1,2 +1,25 @@
 {
+  "name": "ml-library/php",
+  "description": "A machine learning library for PHP, providing functionality for data manipulation and analysis.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "YourNamespace\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Flugel228",
+      "email": "imflugel@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require-dev": {
+    "phpunit/phpunit": "^10.0.19",
+    "phpstan/phpstan": "1.11.x-dev"
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
 }
