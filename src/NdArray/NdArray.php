@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace PhpMLab\NdArray;
 
 use PhpMLab\Contracts\NdArray\NdArrayInterface;
+use PhpMLab\NdArray\Traits\ArrayOperationsTrait;
 
 /**
  * Class NdArray
@@ -14,6 +15,8 @@ use PhpMLab\Contracts\NdArray\NdArrayInterface;
  */
 class NdArray implements NdArrayInterface
 {
+    use ArrayOperationsTrait;
+
     /** @var array<T> */
     private array $data;
 

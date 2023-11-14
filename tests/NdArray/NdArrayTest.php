@@ -40,4 +40,13 @@ class NdArrayTest extends TestCase
 
         $this->assertSame($data, $ndArrayData);
     }
+
+    public function testReshapeMethod(): void
+    {
+        $data = [[1],[2],[3]];
+        $ndArray = (new NdArray($data))->reshape([1,1,3]);
+        $ndArrayData = $ndArray->getData();
+
+        $this->assertSame([[[1,2,3]]],$ndArrayData);
+    }
 }
